@@ -20,6 +20,25 @@ namespace DiziUygulama
                 a[i] = sayi;               
                 Console.WriteLine(a[i]);
             }
+            int b, sayac = 0;
+            Console.WriteLine("sayı gir ");
+            b = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < 10; i++)
+            {
+                if (a[i] == b)
+                {
+                    sayac++;
+
+                }
+            }
+            if (sayac != 0)
+            {
+                Console.WriteLine(b + " sayısından " + sayac + " tane var ");
+            }
+            else
+            {
+                Console.WriteLine("girdiginiz sayı bulunmamıştır");
+            }
             
             Console.ReadKey();
         }
